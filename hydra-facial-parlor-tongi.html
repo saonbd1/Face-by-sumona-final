@@ -50,7 +50,15 @@
       padding: .95rem 1.1rem; border-radius: 0 8px 8px 0; margin: 1.2rem 0;
       font-size: .97rem; line-height: 1.7; color: #33384a; }
     .fbs-cta-row { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.4rem; }
-    @media (max-width: 767px) { .fbs-breadcrumb { padding-top: 78px; } }
+    /* The added prose/FAQ blocks use custom cids, so the theme's per-section
+       padding rule never matched them: every Mobirise section around them was
+       inset from the page edge while these hugged it. Restore the standard
+       vertical rhythm for these blocks only. */
+    section.content13[class*="cid-"]:not([class*="cid-vv"]) {
+      padding-top: 64px; padding-bottom: 64px; }
+    /* Breadcrumb now sits directly beneath the fixed navbar, so clear its height. */
+    .fbs-breadcrumb-top { margin-top: 106px; }
+    @media (max-width: 767px) { .fbs-breadcrumb-top { margin-top: 78px; } }
   </style>
   <!-- ================= SEO: canonical + social + icons ================= -->
   <link rel="canonical" href="https://www.trueface.bond/hydra-facial-parlor-tongi.html">
@@ -443,7 +451,7 @@
 						<a href="index.html#top"><img src="assets/images/ghostwriter-1789574933627.png" alt="Face by Sumona logo" style="height: 5rem;" width="1024" height="1024" decoding="async"></a>
 					
 				</span>
-				<span class="navbar-caption-wrap"><a class="navbar-caption new-font text-white display-1" href="index.html">FACE BY SUMONA</a></span>
+				<span class="navbar-caption-wrap"><a class="navbar-caption new-font text-white display-1" href="https://www.trueface.bond">FACE BY SUMONA</a></span>
 			</div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<div class="hamburger">
@@ -470,6 +478,14 @@
 </section>
 
 
+<nav class="fbs-breadcrumb fbs-breadcrumb-top" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="hydra-facial-parlor-tongi.html" aria-current="page">HydraFacial Tongi</a></li>
+  </ol>
+</nav>
+
 <section data-bs-version="5.1" class="header9 cid-vvYes44a4Z" id="header9-1l">
 
     
@@ -491,13 +507,6 @@
         </div>
     </div>
 </section>
-<nav class="fbs-breadcrumb" aria-label="Breadcrumb">
-  <ol>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="hydra-facial-parlor-tongi.html" aria-current="page">HydraFacial Tongi</a></li>
-  </ol>
-</nav>
 
 
 <section data-bs-version="5.1" class="features13 cid-vvY9BkjYSA" id="features13-1i">
@@ -558,7 +567,7 @@
                         </div>
                         <div class="text-box">
                             <h4 class="icon-title mbr-black mbr-fonts-style display-7"><strong>Oxygen Infusion</strong></h4>
-                            <h5 class="icon-text mbr-black mbr-fonts-style display-4">A gentle ultrasound step that helps loosen congestion beneath the surface of the skin.</h5>
+                            <h5 class="icon-text mbr-black mbr-fonts-style display-4">A pressurised oxygen flow helps deliver the serum into the skin for a fresher, more even-looking finish.</h5>
                         </div>
                     </div>
                 </div>
@@ -623,39 +632,8 @@
     </div>
 </section>
 
-<section data-bs-version="5.1" class="content13 cid-vvYg5jZpkP" id="content13-1n">
-    
-
-    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style mb-4 display-5">
-                    <strong>Frequently asked questions</strong>
-                </h3>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-lg-6">
-                        <ul class="list mbr-fonts-style display-7">
-                            <li><strong>Is the HyDra 7 in 1 face treatment suitable for all skin types</strong><br>Hydra Machine work differently for different skin types. People with sensitive or dry skin should patch test first and follow the recommended frequency to help reduce the risk of irritation.</li>
-                            <li><strong>Does the Machine remove dark spots permanently?</strong><br>Hydra kit is intended to help reduce the appearance of dark spots and brighten the look of the complexion. Results may vary, and daily take care of your skin is necessary.</li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <ul class="list mbr-fonts-style display-7">
-                            <li><strong>Should I need to take this facial often?</strong><br>No you don't have to.&nbsp;&nbsp;</li>
-                            <li><strong>How long does it take to see results?<br></strong>The time required to see visible changes varies by person and depends on consistent use, skin type, and other skincare habits. But you will notice the change by yourself.&nbsp;</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<!-- Removed: this section duplicated the HydraFacial FAQ further down the page
+     (same four questions). One FAQ section is kept per page - see #faq-hydra. -->
 
 <section data-bs-version="5.1" class="content13 cid-how-the-hydrafacial-7-in" id="how-the-hydrafacial-7-in">
   <div class="container">
@@ -767,7 +745,7 @@
                         
                     <li class="row-links-soc-item mbr-fonts-style display-7">
                             <a href="https://www.tiktok.com/@sumonaislam408" class="text-secondary text-primary">TikTok</a>
-                        </li><li class="row-links-soc-item mbr-fonts-style display-4"><a href="https://facebook.com/ssherbalproducts" class="text-secondary">Facebook</a></li></ul>
+                        </li></ul>
                 </div>
             </div>
         </div>

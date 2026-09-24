@@ -50,7 +50,15 @@
       padding: .95rem 1.1rem; border-radius: 0 8px 8px 0; margin: 1.2rem 0;
       font-size: .97rem; line-height: 1.7; color: #33384a; }
     .fbs-cta-row { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.4rem; }
-    @media (max-width: 767px) { .fbs-breadcrumb { padding-top: 78px; } }
+    /* The added prose/FAQ blocks use custom cids, so the theme's per-section
+       padding rule never matched them: every Mobirise section around them was
+       inset from the page edge while these hugged it. Restore the standard
+       vertical rhythm for these blocks only. */
+    section.content13[class*="cid-"]:not([class*="cid-vv"]) {
+      padding-top: 64px; padding-bottom: 64px; }
+    /* Breadcrumb now sits directly beneath the fixed navbar, so clear its height. */
+    .fbs-breadcrumb-top { margin-top: 106px; }
+    @media (max-width: 767px) { .fbs-breadcrumb-top { margin-top: 78px; } }
   </style>
   <!-- ================= SEO: canonical + social + icons ================= -->
   <link rel="canonical" href="https://www.trueface.bond/about.html">
@@ -465,6 +473,13 @@
 </section>
 
 
+<nav class="fbs-breadcrumb fbs-breadcrumb-top" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" aria-current="page">About Sumona</a></li>
+  </ol>
+</nav>
+
 <section data-bs-version="5.1" class="start article2 cid-vvpBwac5Ys" id="article02-p">
 	
 
@@ -492,12 +507,6 @@
 		</div>
 	</div>
 </section>
-<nav class="fbs-breadcrumb" aria-label="Breadcrumb">
-  <ol>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html" aria-current="page">About Sumona</a></li>
-  </ol>
-</nav>
 
 
 <section data-bs-version="5.1" class="gallery1 mbr-gallery cid-vw5xNixCRV" id="gallery01-1u">

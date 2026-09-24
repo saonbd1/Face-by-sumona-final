@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Mobirise v6.1.12, #">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <meta name="description" content="Visit Face by Sumona at 121 Hazi Bari, Sher E Bangla Road, Middle Arichpur, Tongi 1710. Open 10am-9pm daily. Call or WhatsApp +880 1933-211642 to book.">
+  <meta name="description" content="Visit Face by Sumona at 121 Hazi Bari, Sher E Bangla Road, Middle Arichpur, Tongi 1710. Open 10am-9pm daily. Call or WhatsApp +880 1933-211642 to book now.">
   <style>
     /* --- SEO additions: breadcrumbs, FAQ accordion, owner notes --- */
     /* Any image with width/height attrs must scale proportionally; without
@@ -50,7 +50,15 @@
       padding: .95rem 1.1rem; border-radius: 0 8px 8px 0; margin: 1.2rem 0;
       font-size: .97rem; line-height: 1.7; color: #33384a; }
     .fbs-cta-row { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.4rem; }
-    @media (max-width: 767px) { .fbs-breadcrumb { padding-top: 78px; } }
+    /* The added prose/FAQ blocks use custom cids, so the theme's per-section
+       padding rule never matched them: every Mobirise section around them was
+       inset from the page edge while these hugged it. Restore the standard
+       vertical rhythm for these blocks only. */
+    section.content13[class*="cid-"]:not([class*="cid-vv"]) {
+      padding-top: 64px; padding-bottom: 64px; }
+    /* Breadcrumb now sits directly beneath the fixed navbar, so clear its height. */
+    .fbs-breadcrumb-top { margin-top: 106px; }
+    @media (max-width: 767px) { .fbs-breadcrumb-top { margin-top: 78px; } }
   </style>
   <!-- ================= SEO: canonical + social + icons ================= -->
   <link rel="canonical" href="https://www.trueface.bond/contact.html">
@@ -65,7 +73,7 @@
   <meta property="og:site_name" content="Face by Sumona">
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="Contact &amp; Book | Face by Sumona Beauty Salon, Tongi">
-  <meta property="og:description" content="Visit Face by Sumona at 121 Hazi Bari, Sher E Bangla Road, Middle Arichpur, Tongi 1710. Open 10am-9pm daily.">
+  <meta property="og:description" content="Visit Face by Sumona at 121 Hazi Bari, Sher E Bangla Road, Middle Arichpur, Tongi 1710. Open 10am-9pm daily. Call +880 1933-211642.">
   <meta property="og:url" content="https://www.trueface.bond/contact.html">
   <meta property="og:image" content="https://www.trueface.bond/assets/images/og-image.jpg">
   <meta property="og:image:width" content="1200">
@@ -73,7 +81,7 @@
   <meta property="og:image:alt" content="Face by Sumona - beauty salon and bridal makeup in Tongi, Gazipur">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Contact &amp; Book | Face by Sumona Beauty Salon, Tongi">
-  <meta name="twitter:description" content="Visit Face by Sumona at 121 Hazi Bari, Sher E Bangla Road, Middle Arichpur, Tongi 1710. Open 10am-9pm daily.">
+  <meta name="twitter:description" content="Visit Face by Sumona at 121 Hazi Bari, Sher E Bangla Road, Middle Arichpur, Tongi 1710. Open 10am-9pm daily. Call +880 1933-211642.">
   <meta name="twitter:image" content="https://www.trueface.bond/assets/images/og-image.jpg">
 
   <!-- ================= STRUCTURED DATA (JSON-LD) =================
@@ -315,7 +323,7 @@
       "@id": "https://www.trueface.bond/contact.html#webpage",
       "url": "https://www.trueface.bond/contact.html",
       "name": "Contact & Book | Face by Sumona Beauty Salon, Tongi",
-      "description": "Visit Face by Sumona at 121 Hazi Bari, Sher E Bangla Road, Middle Arichpur, Tongi 1710. Open 10am-9pm daily. Call or WhatsApp +880 1933-211642 to book.",
+      "description": "Visit Face by Sumona at 121 Hazi Bari, Sher E Bangla Road, Middle Arichpur, Tongi 1710. Open 10am-9pm daily. Call or WhatsApp +880 1933-211642 to book now.",
       "inLanguage": "en",
       "isPartOf": {
         "@id": "https://www.trueface.bond/#website"
@@ -340,7 +348,7 @@
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Contact & Book",
+          "name": "Contact",
           "item": "https://www.trueface.bond/contact.html"
         }
       ]
@@ -406,11 +414,12 @@
   </script>
   <!-- ================= /SEO ================= -->
   
+  
   <title>Contact &amp; Book | Face by Sumona Beauty Salon, Tongi</title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/web/assets/gdpr-plugin/gdpr-styles.css">
   <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Lobster+Two:400,400i,700,700i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster+Two:400,400i,700,700i&display=swap"></noscript>
@@ -418,12 +427,15 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lilita+One:400&display=swap"></noscript>
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=q1NPvf"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=q1NPvf" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=nNAcWK"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=nNAcWK" type="text/css">
 
+  
+  
+  
 </head>
 <body>
   
-  <section data-bs-version="5.1" class="menu menu5 cid-vvpd3sa6Dy" once="menu" id="menu05-i">
+  <section data-bs-version="5.1" class="menu menu5 cid-vvpd3sa6Dy" once="menu" id="menu05-u">
 	
 
 	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
@@ -460,121 +472,153 @@
 	</nav>
 </section>
 
-<section data-bs-version="5.1" class="form5 cid-vvq3Fq6CJQ" id="form05-1c">
-    
 
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-8 pb-5">
-                <h2 class="mbr-section-title mbr-fonts-style align-center mb-4 mbr-light display-2">
-                    <strong>Book an Appointment at Face by Sumona</strong></h2>
-                <h3 class="mbr-section-subtitle mbr-fonts-style align-center mb-4 mbr-light display-7">Send us a message and we will confirm your appointment at the salon in Tongi.</h3>
-            </div>
+<nav class="fbs-breadcrumb fbs-breadcrumb-top" aria-label="Breadcrumb">
+  <ol>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="contact.html" aria-current="page">Contact</a></li>
+  </ol>
+</nav>
+
+<section data-bs-version="5.1" class="contacts03 cid-vvpE6V6F9T" id="contacts03-x">
+  
+
+  
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-4">
+        <div class="col-12 col-md-12">
+          <h1 class="mbr-section-title mbr-fonts-style mt-0 mb-4 display-2">
+            <strong>Contact Face by Sumona in Tongi</strong>
+          </h1>
+          <h6 class="mbr-section-subtitle mbr-fonts-style mt-0 mb-4 display-7">Our store is open now! Explore our inspiring space. Come on in and let's start this journey together.<br></h6>
+          <div class="mbr-section-btn item-footer mt-3 main-button"><a href="contact.html" class="btn item-btn btn-primary display-7">Book an appointment</a></div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-md-12 col-lg-7">
-                <div class="form-wrap">
-                    <form class="mbr-form" data-form-title="Message from contact page" method="post" action="https://mobirise.eu/" data-form-id="02">
-                        <div class="row row-sm-offset">
-                            <div class="col-md-4 multi-horizontal" data-for="name">
-                                <div class="form-group">
-                                    <label class="form-control-label mbr-fonts-style display-7" for="name-form05-1c">Name</label>
-                                    <input type="text" class="form-control" name="name" data-form-field="Name" required="required" id="name-form05-1c">
-                                </div>
-                            </div>
-                            <div class="col-md-4 multi-horizontal" data-for="email">
-                                <div class="form-group">
-                                    <label class="form-control-label mbr-fonts-style display-7" for="email-form05-1c">Email</label>
-                                    <input type="email" class="form-control" name="email" data-form-field="Email" required="required" id="email-form05-1c">
-                                </div>
-                            </div>
-                            <div class="col-md-4 multi-horizontal" data-for="phone">
-                                <div class="form-group">
-                                    <label class="form-control-label mbr-fonts-style display-7" for="phone-form05-1c">Phone</label>
-                                    <input type="tel" class="form-control" name="phone" data-form-field="Phone" id="phone-form05-1c">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group" data-for="message">
-                            <label class="form-control-label mbr-fonts-style display-7" for="message-form05-1c">Which service would you like?</label>
-                            <textarea class="form-control" name="message" data-form-field="Message" rows="4" id="message-form05-1c"></textarea>
-                        </div>
-                        <span class="gdpr-block">
-<label>
-<span class="textGDPR display-7" style="color: #a7a7a7"><input type="checkbox" name="gdpr" id="gdpr-form02-z" required="">By continuing you agree to our booking terms and privacy practices.</span>
-</label>
-</span></form>
-                    <div class="dragArea form-btn justify-content-center">
-                        <button type="submit" class="btn btn-primary display-4">Send</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
+      <div class="col-lg-8 side-features">
+        <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.034423467939!2d90.406031!3d23.888398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c5ad6238b837%3A0x18916e04df06877e!2sFace%20By%20Sumona!5e0!3m2!1sen!2sbd!4v1789597183979!5m2!1sen!2sbd" allowfullscreen=""></iframe></div>
+      </div>
     </div>
+  </div>
 </section>
 
-<section data-bs-version="5.1" class="contacts02 map1 cid-vvq3IhRXCi" id="contacts02-1b">
 
+<section data-bs-version="5.1" class="form5 cid-vvpEevGhNE" id="form02-z">
     
-
     
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 content-head">
-                <div class="mbr-section-head">
-                    <h2 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Face by Sumona &mdash; Address, Hours and Booking</strong></h2>
+                <div class="mbr-section-head mb-5">
+                    <h2 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Send Your Message</strong></h2>
                     
                 </div>
             </div>
         </div>
         <div class="row justify-content-center">
-            <div class="card col-12 col-md-12 col-lg-6">
-                <div class="card-wrapper">
-                    <div class="text-wrapper">
-                        <h3 class="cardTitle mbr-fonts-style mb-2 display-5">
-                            <strong>Contact Us</strong>
-                        </h3>
-                        <ul class="list mbr-fonts-style display-7">
-                            <li class="mbr-text item-wrap">Phone: <a href="tel:+8801933211642">+880 1933-211642</a></li>
-                            <li class="mbr-text item-wrap">WhatsApp: <a href="https://wa.me/8801933211642" rel="noopener">+880 1933-211642</a></li>
-                            <li class="mbr-text item-wrap">Email: <a href="mailto:facebysumona@gmail.com">facebysumona@gmail.com</a></li>
-                            <li class="mbr-text item-wrap">Address: 121 Hazi Bari Sher E Bangla Road</li><li class="mbr-text item-wrap">Middle Arichpur Tongi </li><li class="mbr-text item-wrap">Postal Code: 1710 Gazipur&nbsp;</li><li class="mbr-text item-wrap"><br></li>
-                            <li class="mbr-text item-wrap"><strong>Working hours: 10:00AM - 9:00PM</strong></li>
-                        </ul>
+            <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+                <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler" data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true" value="XEz/JmRmyLqbJAF/4EjZANuk/EVR2ochimSFPDT/EpXFqLLldbOCoXIMRgrBW9mNou8LvLJIZgP+AYj8USvgimOQmP+Ws6KO5g2ICdE/UUTxYlguFJxMks8pYNc59WXY">
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+                        <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">
+                            Oops...! some problem!
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="map-wrapper col-md-12 col-lg-6">
-                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.034423467939!2d90.406031!3d23.888398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c5ad6238b837%3A0x18916e04df06877e!2sFace%20By%20Sumona!5e0!3m2!1sen!2sbd!4v1789598221072!5m2!1sen!2sbd" allowfullscreen=""></iframe></div>
+                    <div class="dragArea row">
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="name">
+                            <input type="text" name="name" placeholder="Name" data-form-field="name" class="form-control" value="" id="name-form02-z">
+                        </div>
+                        <div class="col-md col-sm-12 form-group mb-3" data-for="email">
+                            <input type="email" name="email" placeholder="E-mail" data-form-field="email" class="form-control" value="" id="email-form02-z">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="phone">
+                            <input type="tel" name="phone" placeholder="Phone" data-form-field="phone" class="form-control" value="" id="phone-form02-z">
+                        </div>
+                        <div class="col-12 form-group mb-3" data-for="textarea">
+                            <textarea name="textarea" placeholder="Message" data-form-field="textarea" class="form-control" id="textarea-form02-z"></textarea>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 align-center mbr-section-btn">
+                            <button type="submit" class="btn btn-primary display-7">Send message</button>
+                        </div>
+                    </div>
+                <span class="gdpr-block">
+<label>
+<span class="textGDPR display-7" style="color: #a7a7a7"><input type="checkbox" name="gdpr" id="gdpr-form02-z" required="">By continuing you agree to our booking terms and privacy practices.</span>
+</label>
+</span></form>
             </div>
         </div>
     </div>
 </section>
-<nav class="fbs-breadcrumb" aria-label="Breadcrumb">
-  <ol>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="contact.html" aria-current="page">Contact &amp; Book</a></li>
-  </ol>
-</nav>
 
+<section data-bs-version="5.1" class="social06 cid-vw6mFu4Xcf" id="social06-25">
+	
 
-<section data-bs-version="5.1" class="content13 cid-contact-details" id="contact-details">
+	
+	
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 content-head">
+				<div class="mb-5">
+					<h2 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+						<strong>Follow Face by Sumona</strong>
+					</h2>
+					
+				</div>
+			</div>
+		</div>
+                <div class="row justify-content-center">
+			
+
+			<div class="item features-without-image col-12 col-md-6 col-lg-4">
+				<div class="item-wrapper">
+					<span class="mbr-iconfont m-auto socicon-tiktok socicon"></span>
+					<div class="card-box">
+						<h4 class="card-title mbr-fonts-style mb-1 display-5">
+							<strong><a href="https://www.tiktok.com/@sumonaislam408" class="text-primary">TikTok</a></strong>
+						</h4>
+						
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+</section>
+
+<section data-bs-version="5.1" class="content13 cid-how-to-reach-the-salon" id="how-to-reach-the-salon">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-12 col-lg-10">
-        <h2 class="mbr-section-title mbr-fonts-style mb-4 display-5"><strong>Contact Details and Opening Hours</strong></h2>
+        <h2 class="mbr-section-title mbr-fonts-style mb-4 display-5"><strong>How to Reach the Salon</strong></h2>
         <div class="fbs-prose">
-          <p>Face by Sumona is at <strong>121 Hazi Bari, Sher E Bangla Road, Middle Arichpur, Tongi 1710, Gazipur, Bangladesh.</strong> The salon is open <strong>seven days a week, 10:00 AM to 9:00 PM</strong>, so you can book a facial, haircut, threading or makeup appointment on any day of the week, including Friday and public holidays.</p>
-          <p>The quickest way to book is to call or WhatsApp <a href="tel:+8801933211642">+880 1933-211642</a>. Tell us which service you want and when you would like to come in, and we will confirm the time. You can also send a message using the form above, or email <a href="mailto:facebysumona@gmail.com">facebysumona@gmail.com</a>.</p>
-          <h3>Getting here</h3>
-          <p>The salon sits on Sher E Bangla Road in Middle Arichpur, easy to reach from Tongi Bazar, Tongi Station Road and the Tongi bridge area, and a short ride from Uttara and the rest of Gazipur. If you are arriving by rickshaw or CNG, ask for Sher E Bangla Road in Middle Arichpur and look for the Face by Sumona board.</p>
-          <h3>Before you arrive</h3>
+          <p>The easiest way to book is to call or message us directly. Face by Sumona is open seven days a week from 10:00 AM to 9:00 PM.</p>
           <ul>
-            <li>For facials, come with clean skin where possible and mention any sensitivity, allergy or product you are currently using.</li>
-            <li>For bridal and party makeup, book well ahead of your event so timings and any trial can be arranged.</li>
-            <li>If you are unsure which service suits you, call first — it is easier to advise before the appointment than to change course during it.</li>
+            <li><strong>Phone:</strong> <a href="tel:+8801933211642">+880 1933-211642</a></li>
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/8801933211642" rel="noopener">+880 1933-211642</a></li>
+            <li><strong>Email:</strong> <a href="mailto:facebysumona@gmail.com">facebysumona@gmail.com</a></li>
+            <li><strong>Address:</strong> 121 Hazi Bari, Sher E Bangla Road, Middle Arichpur, Tongi 1710, Gazipur, Bangladesh.</li>
+            <li><strong>Hours:</strong> open 7 days a week, 10:00 AM – 9:00 PM.</li>
           </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- OWNER ACTION REQUIRED: Owner action: Owners: the enquiry form on this page posts to a third-party Mobirise endpoint. If messages are not reaching facebysumona@gmail.com, replace it — the safest option is a link to the WhatsApp number above, which always works. -->
+
+
+<section data-bs-version="5.1" class="content13 cid-finding-us-in-middle-ari" id="finding-us-in-middle-ari">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-12 col-lg-10">
+        <h2 class="mbr-section-title mbr-fonts-style mb-4 display-5"><strong>Finding Us in Middle Arichpur, Tongi</strong></h2>
+        <div class="fbs-prose">
+          <p>The salon is on Sher E Bangla Road in Middle Arichpur, Tongi, in Gazipur district. The map above shows the exact location. If you are coming for bridal or party makeup and would prefer the service at your own venue, ask about on-home service when you book.</p>
+          <p>For first-time clients, it helps to arrive a few minutes early so we can talk through what you want before the treatment begins.</p>
         </div>
       </div>
     </div>
@@ -621,7 +665,7 @@
   </div>
 </section>
 
-<section data-bs-version="5.1" class="footer2 cid-vw6xOWxtd0" once="footers" id="footer02-2d">
+<section data-bs-version="5.1" class="footer2 cid-vw6yDVRSyU" once="footers" id="footer02-2e">
     
 
     
