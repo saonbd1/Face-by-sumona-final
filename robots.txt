@@ -1,4 +1,3 @@
 User-agent: *
-Allow: /
+Disallow: /cgi-bin
 
-Sitemap: https://www.trueface.bond/sitemap.xml
