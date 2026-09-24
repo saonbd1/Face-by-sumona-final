@@ -16,6 +16,38 @@ button {
   border-color: transparent;
 }
 
+.fbs-trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0 1.2rem;
+}
+
+.fbs-trust-row span {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(57, 49, 147, 0.15);
+  background: rgba(255, 255, 255, 0.7);
+  color: #392f83;
+  border-radius: 999px;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.fbs-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.fbs-hero-actions .btn {
+  min-width: 170px;
+}
+
 .embla__button,
 .carousel-control {
   background-color: #edefea !important;
