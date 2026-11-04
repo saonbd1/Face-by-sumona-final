@@ -1,0 +1,7 @@
+# robots.txt for Face by Sumona - https://www.trueface.bond
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.trueface.bond/sitemap.xml
